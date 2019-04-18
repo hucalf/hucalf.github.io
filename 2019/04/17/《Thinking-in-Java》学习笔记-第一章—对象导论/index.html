@@ -162,27 +162,20 @@
 
 
 
-  <meta name="description" content="目录 Kotlin简介 Kotlin是一门可以运行在Java虚拟机、Android、浏览器上的静态语言，它与Java100%兼容;已正式成为Android官方支持开发语言。  Kotlin特点 与Java的编译、运行速度相似。 比Java更安全、简洁。 比最成熟的竞争对手Scala语言更加简单。  使用Idea创建HelloKotlin项目打开Idea，如下图:  点击Create New Pro">
-<meta name="keywords" content="Kotlin">
+  <meta name="description" content="笔者前言 最近在阅读《Thinking in Java》，借助这本书呢，我这这里认真梳理Java基础知识，为了形成自己的知识体系。坚持把这一系列的学习笔记。一是为了提升自己的学习能力；二是给自己整理一份资料，方便以后的查阅和复习。同时也希望能够帮助更多的小伙伴:  面向对象程序设计（Object—oriented Programming，OOP）  抽象过程Java的五个基本特性,表现了一种存粹面">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kotlin初级篇(一):环境搭建">
-<meta property="og:url" content="http://hujiangwei.cn/2019/04/16/Kotlin初级篇-一-环境搭建/index.html">
+<meta property="og:title" content="《Thinking in Java》学习笔记:第一章—对象导论">
+<meta property="og:url" content="http://hujiangwei.cn/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/index.html">
 <meta property="og:site_name" content="胡江维的博客">
-<meta property="og:description" content="目录 Kotlin简介 Kotlin是一门可以运行在Java虚拟机、Android、浏览器上的静态语言，它与Java100%兼容;已正式成为Android官方支持开发语言。  Kotlin特点 与Java的编译、运行速度相似。 比Java更安全、简洁。 比最成熟的竞争对手Scala语言更加简单。  使用Idea创建HelloKotlin项目打开Idea，如下图:  点击Create New Pro">
+<meta property="og:description" content="笔者前言 最近在阅读《Thinking in Java》，借助这本书呢，我这这里认真梳理Java基础知识，为了形成自己的知识体系。坚持把这一系列的学习笔记。一是为了提升自己的学习能力；二是给自己整理一份资料，方便以后的查阅和复习。同时也希望能够帮助更多的小伙伴:  面向对象程序设计（Object—oriented Programming，OOP）  抽象过程Java的五个基本特性,表现了一种存粹面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-20bf7b40e20d63d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-34ab0d486dd5d76a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-443502e8940a5def.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-5573274ab73f6677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-cbb651d68b3f4b50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-a3e5686edc5ccf86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-872f6bd864802f13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4284412-4544711cde4001dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-04-16T05:48:29.325Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7047396-2745380ae2e37216.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-04-18T03:35:01.887Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kotlin初级篇(一):环境搭建">
-<meta name="twitter:description" content="目录 Kotlin简介 Kotlin是一门可以运行在Java虚拟机、Android、浏览器上的静态语言，它与Java100%兼容;已正式成为Android官方支持开发语言。  Kotlin特点 与Java的编译、运行速度相似。 比Java更安全、简洁。 比最成熟的竞争对手Scala语言更加简单。  使用Idea创建HelloKotlin项目打开Idea，如下图:  点击Create New Pro">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/4284412-20bf7b40e20d63d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="《Thinking in Java》学习笔记:第一章—对象导论">
+<meta name="twitter:description" content="笔者前言 最近在阅读《Thinking in Java》，借助这本书呢，我这这里认真梳理Java基础知识，为了形成自己的知识体系。坚持把这一系列的学习笔记。一是为了提升自己的学习能力；二是给自己整理一份资料，方便以后的查阅和复习。同时也希望能够帮助更多的小伙伴:  面向对象程序设计（Object—oriented Programming，OOP）  抽象过程Java的五个基本特性,表现了一种存粹面">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7047396-2745380ae2e37216.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -190,7 +183,7 @@
 
   
   
-  <link rel="canonical" href="http://hujiangwei.cn/2019/04/16/Kotlin初级篇-一-环境搭建/">
+  <link rel="canonical" href="http://hujiangwei.cn/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/">
 
 
 
@@ -200,7 +193,7 @@
   };
 </script>
 
-  <title>Kotlin初级篇(一):环境搭建 | 胡江维的博客</title>
+  <title>《Thinking in Java》学习笔记:第一章—对象导论 | 胡江维的博客</title>
   
 
 
@@ -521,7 +514,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hujiangwei.cn/2019/04/16/Kotlin初级篇-一-环境搭建/">
+    <link itemprop="mainEntityOfPage" href="http://hujiangwei.cn/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="胡江维">
@@ -538,7 +531,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Kotlin初级篇(一):环境搭建
+          <h1 class="post-title" itemprop="name headline">《Thinking in Java》学习笔记:第一章—对象导论
 
               
             
@@ -564,12 +557,24 @@
                 
               
 
-              <time title="创建时间：2019-04-16 13:26:18 / 修改时间：13:48:29" itemprop="dateCreated datePublished" datetime="2019-04-16T13:26:18+08:00">2019-04-16</time>
+              <time title="创建时间：2019-04-17 08:51:55" itemprop="dateCreated datePublished" datetime="2019-04-17T08:51:55+08:00">2019-04-17</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-18 11:35:01" itemprop="dateModified" datetime="2019-04-18T11:35:01+08:00">2019-04-18</time>
               
             
           </span>
@@ -586,7 +591,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Kotlin学习笔记/" itemprop="url" rel="index"><span itemprop="name">Kotlin学习笔记</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/《Thinking-in-Java》学习笔记/" itemprop="url" rel="index"><span itemprop="name">《Thinking in Java》学习笔记</span></a></span>
 
                 
                 
@@ -605,8 +610,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/16/Kotlin初级篇-一-环境搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/16/Kotlin初级篇-一-环境搭建/" itemprop="commentCount"></span>
+                <a href="/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -614,7 +619,7 @@
 
           
           
-            <span id="/2019/04/16/Kotlin初级篇-一-环境搭建/" class="leancloud_visitors" data-flag-title="Kotlin初级篇(一):环境搭建">
+            <span id="/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/" class="leancloud_visitors" data-flag-title="《Thinking in Java》学习笔记:第一章—对象导论">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -640,7 +645,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">456</span>
+                <span title="本文字数">2.8k</span>
               
 
               
@@ -654,7 +659,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -674,32 +679,62 @@
       
 
       
-        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><img src="https://upload-images.jianshu.io/upload_images/4284412-20bf7b40e20d63d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Kotlin.png"></p>
-<h2 id="Kotlin简介"><a href="#Kotlin简介" class="headerlink" title="Kotlin简介"></a>Kotlin简介</h2><blockquote>
-<p>Kotlin是一门可以运行在Java虚拟机、Android、浏览器上的静态语言，它与Java100%兼容;已正式成为Android官方支持开发语言。</p>
+        <h1 id="笔者前言"><a href="#笔者前言" class="headerlink" title="笔者前言"></a>笔者前言</h1><blockquote>
+<p>最近在阅读《Thinking in Java》，借助这本书呢，我这这里认真梳理Java基础知识，为了形成自己的知识体系。坚持把这一系列的学习笔记。一是为了提升自己的学习能力；二是给自己整理一份资料，方便以后的查阅和复习。同时也希望能够帮助更多的小伙伴:</p>
 </blockquote>
-<h2 id="Kotlin特点"><a href="#Kotlin特点" class="headerlink" title="Kotlin特点"></a>Kotlin特点</h2><ul>
-<li>与Java的编译、运行速度相似。</li>
-<li>比Java更安全、简洁。</li>
-<li>比最成熟的竞争对手Scala语言更加简单。</li>
+<p>面向对象程序设计（Object—oriented Programming，OOP） </p>
+<h2 id="抽象过程"><a href="#抽象过程" class="headerlink" title="抽象过程"></a>抽象过程</h2><p>Java的五个基本特性,表现了一种存粹面向对象程序设计方式:<br>1) 万物皆对象。<br>2) 程序是对象的集合。<br>3) 每个对象都有自己的由其他对象所构成的存储。<br>4) 每个对象拥有其类型。<br>5) 某一特定类型所有对象都已接收同样的消息。</p>
+<p>我们可以简洁的描述为:对象具有状态、行为、标识。</p>
+<h2 id="每个对象都有一个接口"><a href="#每个对象都有一个接口" class="headerlink" title="每个对象都有一个接口"></a>每个对象都有一个接口</h2><blockquote>
+<p>注:这里的接口（interface）的定义，并不是我们认为的interface,而是每个对象对外提供的方法。</p>
+</blockquote>
+<p>接口定义了某一特定的对象所能发出的请求。就是向某个对象”发送请求”，这个对象便知道此消息的目的，然后执行对应的程序的代码。</p>
+<p>为了向对象发送消息，需要声明对象的名称，并以圆点符号连接一个请求。</p>
+<h2 id="每个对象都提供服务"><a href="#每个对象都提供服务" class="headerlink" title="每个对象都提供服务"></a>每个对象都提供服务</h2><p>将对象看作是服务提供者:它有助于提高对象的内聚性。它是一个简化工具，不仅在设计过程中非常有用，而且当其他人试图理解你的代码或重用某个对象时，如果他们看出对象所能提供的服务的价值，它会使调整对象以适应其设计的过程变得简单得多。</p>
+<h2 id="被隐藏的具体实现"><a href="#被隐藏的具体实现" class="headerlink" title="被隐藏的具体实现"></a>被隐藏的具体实现</h2><p>程序开发人员分为<strong>类创建者</strong>和客户端程序员。</p>
+<ul>
+<li><p>类创建者目标是构建类:只向客户端程序员暴露必须的部分，而隐藏其他部分。被隐藏的部分目的是为了不被客户端程序员所毁坏，这样可以减少程序bug。</p>
+</li>
+<li><p>客户端程序员:每当类创建者创建一个类库时，就建立了与客户端程序员之间的关系，使用这个类库来构建客户端应用。</p>
+</li>
 </ul>
-<h2 id="使用Idea创建HelloKotlin项目"><a href="#使用Idea创建HelloKotlin项目" class="headerlink" title="使用Idea创建HelloKotlin项目"></a>使用Idea创建HelloKotlin项目</h2><p>打开Idea，如下图:</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-34ab0d486dd5d76a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="idea.png"></p>
-<p>点击Create New Project，选择Gradle，勾选Kotlin（Java），如下图:</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-443502e8940a5def.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="CreateKotlin.png"></p>
-<p>点击Next，GroupId（域名自己随便填），ArtifactId（项目名称），如下图：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-5573274ab73f6677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="HelloKotlin.png"></p>
-<p>点击Next，默认，如下图：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-cbb651d68b3f4b50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="default.png"></p>
-<p>点击Next，项目名称，路径，如下图:</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-a3e5686edc5ccf86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ProjectLocation.png"></p>
-<p>在kotlin目录下创建HelloKotlin.tk文件，编写代码，如图：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-872f6bd864802f13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="main.png"></p>
-<p>运行结果如图所示:</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4284412-4544711cde4001dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RunHelloKotlin.png"></p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><blockquote>
-<p>本小结我们学习了什么是Kotlin以及它的特点，并且学会了使用Idea创建Kotlin项目并运行我们的第一个Kotlin项目，这样我们的Kotlin环境就搭建好了。</p>
-</blockquote>
+<p>访问控制是为了能够让客户端程序员只接触自己应该所触及的部分；还有就是允许库设计者可以改变类内部的工作方式而不用担心会影响到客户端程序员。</p>
+<p>Java访问权限修饰符（public、private、protected，默认）,如图:</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7047396-2745380ae2e37216.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="权限修饰符.png"></p>
+<h2 id="复用具体实现"><a href="#复用具体实现" class="headerlink" title="复用具体实现"></a>复用具体实现</h2><p>代码复用是面向对象程序设计语言所提供的最了不起的优点之一。组合”has-a(拥有)”关系（composition）就是使用现有的类合成新的类。如果组合是动态发生的，便称之为聚合（aggregation）。</p>
+<p>特点:极大的灵活性。在我们创建新类时，首先考虑组合，这样会使设计变得更加清晰。</p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>继承(extends)使用基类型和导出类型的概念表示了这种类型之间的相似性。一个基类包含其所有导出类型共享的特性和行为。何以创建一个基类型来表示系统某些对象的核心概念，从基类型中导出其他类型，来表示此核心可以被实现的各种不同方式。</p>
+<p>当继承现有类时，也就创造了新的类型。意味着导出类与基类具有相同的类型。</p>
+<p>基类与导出类产生差异的两种方法:</p>
+<p>1) 当不能满足你所有的需求，你可以直接在导出类添加新的方法。<br>2) 覆盖（overriding）就是改变现有基类的方法的行为。</p>
+<h3 id="“是一个”-与-“像是一个”-关系"><a href="#“是一个”-与-“像是一个”-关系" class="headerlink" title="“是一个” 与 “像是一个” 关系"></a>“是一个” 与 “像是一个” 关系</h3><p>is-a(是一个):替代原则:继承应该只覆盖基类的方法，意味着导出类和基类是完全相同的类型，因此它们具有完全相同的接口，可以用一个导出类对象完全替代一个基类对象。<br>确定是否用is-a来描述基类与导出来之间的关系，来判断是否继承。</p>
+<p>is-like-(像是一个):有时必须在导出类型中添加新的接口元素，这样扩展了接口，这个新的类型可以代替基类。（基类无法访问新添加的方法）</p>
+<h2 id="伴随多态的可互换性"><a href="#伴随多态的可互换性" class="headerlink" title="伴随多态的可互换性"></a>伴随多态的可互换性</h2><p>多态使得事情总能够正确的处理。当向一个对象发送消息时，即涉及向上转型，该对象也知道要执行什么样的行为。</p>
+<p>前期绑定:一个非面向对象编程的编译器产生的函数调用。</p>
+<p>后期绑定:当向对象发送消息时，被调用的代码直到运行时才能确定。</p>
+<h2 id="单根继承结构"><a href="#单根继承结构" class="headerlink" title="单根继承结构"></a>单根继承结构</h2><p>单根继承结构的优点:</p>
+<ul>
+<li>在单继承结构中的所有的对象都具有一个共用的接口（相同的基本类型）。</li>
+<li>单继承结构保证所有对象都具备某些功能</li>
+<li>单继承结构使垃圾回收器的实现变得容易得多，编程带来更大的灵活性。</li>
+</ul>
+<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><p>容器也被称之为集合。</p>
+<p>对容器的选择有两个原因:</p>
+<p>1) 不同容器提供了不同的接口和外部行为，堆栈相比于队列就具备不同的接口和行为，也不同于集合和列表的接口行为。它们之中的某种容器提供的解决方案可能比其他容器要灵活得多。<br>2) 不同的容器对于某些操作具有不同的效率。</p>
+<p>ArrayList和LinkedList的比较:它们都具有相同的接口和外部行为的简单的序列，不同的是：在ArrayList中，随机访问元素是一个花费固定时间的操作，在LinkedList中，随机选取元素在列表移动，这种代价是高昂的，访问元素越接近表尾的元素，花费的时间越长。如果想要在序列中间插入一个元素，LinkedList的开销却比ArrayList要小。</p>
+<p>性能优化选择ArrayList。</p>
+<h2 id="对象的创建和生命期"><a href="#对象的创建和生命期" class="headerlink" title="对象的创建和生命期"></a>对象的创建和生命期</h2><p>在使用对象时，最关键的问题之一便是它们的生成和销毁方式。每个对象为了生存都需要资源，尤其时内存，当我们不需要一个对象时，它必须被清理，使其占有的资源可以被释放和重用。</p>
+<p>Java提供了被称为”垃圾回收器”的机制，它可以自动发现对象何时不再被使用，并继而销毁他。用来处理内存的释放。</p>
+<h2 id="异常处理-处理错误"><a href="#异常处理-处理错误" class="headerlink" title="异常处理:处理错误"></a>异常处理:处理错误</h2><p>异常提供了一种错误状况进行可靠恢复的途径。如果代码没有编写正确，你就会得到编译时的出错消息，你可以进行改正，并恢复你执行的程序，有助于编写处更健壮的代码。</p>
+<h2 id="并发进程"><a href="#并发进程" class="headerlink" title="并发进程"></a>并发进程</h2><p>并发是指有时中断处理时间性强的任务是必须的，但是对于大量的其他问题，我们只想把问题切分成对个可独立运行的部分（线程），从而提高程序的响应能力。</p>
+<p>并发它有一个隐患：共享资源。如果有多个并行任务都要访问同一资源，就会出现问题。为了解决这个问题，某个任务锁定某项资源，完成其任务，然后释放资源锁，使其他任务可以使用这项资源。</p>
+<h2 id="Java与Internet"><a href="#Java与Internet" class="headerlink" title="Java与Internet"></a>Java与Internet</h2><h3 id="Web是什么"><a href="#Web是什么" class="headerlink" title="Web是什么"></a>Web是什么</h3><p>1) 客户/服务器计算技术</p>
+<pre><code>客户/服务器系统的核心技术思想是：系统具有一个中央信息存储池（central repository of information），用来存储某种数据，它通常存在于数据库中，你可以根据需要将它分发给某些人员或机器集群。
+</code></pre><p>2) Web就是一台举行服务器</p>
+<pre><code>所有的服务器和客户机都存在于同一个网络。
+</code></pre><h3 id="客户端编程"><a href="#客户端编程" class="headerlink" title="客户端编程"></a>客户端编程</h3><p>Web最初的”服务器—浏览器”设计是为了能够提供交互性的内容。基本的HTML（Hyper Text Markup Language，超文本标记语言）。</p>
+<h3 id="服务端编程"><a href="#服务端编程" class="headerlink" title="服务端编程"></a>服务端编程</h3><p>Java中的Web服务器，它让你使用Java编写被称之为servlet的程序来实现服务器编程。servlet及其衍生物JSP。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>面向对象编程，编写良好的Java程序，易于理解。对于设计良好的程序，通常阅读它就可以很容易地理解其代码。</p>
 
       
     </div>
@@ -734,7 +769,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://hujiangwei.cn/2019/04/16/Kotlin初级篇-一-环境搭建/" title="Kotlin初级篇(一):环境搭建">http://hujiangwei.cn/2019/04/16/Kotlin初级篇-一-环境搭建/</a>
+    <a href="http://hujiangwei.cn/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/" title="《Thinking in Java》学习笔记:第一章—对象导论">http://hujiangwei.cn/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
@@ -758,7 +793,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
+            <a href="/tags/Java/" rel="tag"># Java</a>
           
         </div>
       
@@ -826,15 +861,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/16/Kotlin初级篇-三-表达式/" rel="next" title="Kotlin初级篇(三):表达式">
+                <i class="fa fa-chevron-left"></i> Kotlin初级篇(三):表达式
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/16/Kotlin初级篇-二-数据类型/" rel="prev" title="Kotlin初级篇(二):数据类型">
-                Kotlin初级篇(二):数据类型 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1021,7 +1056,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Kotlin简介"><span class="nav-number">1.1.</span> <span class="nav-text">Kotlin简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kotlin特点"><span class="nav-number">1.2.</span> <span class="nav-text">Kotlin特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Idea创建HelloKotlin项目"><span class="nav-number">1.3.</span> <span class="nav-text">使用Idea创建HelloKotlin项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">1.4.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#笔者前言"><span class="nav-number">1.</span> <span class="nav-text">笔者前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象过程"><span class="nav-number">1.1.</span> <span class="nav-text">抽象过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#每个对象都有一个接口"><span class="nav-number">1.2.</span> <span class="nav-text">每个对象都有一个接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#每个对象都提供服务"><span class="nav-number">1.3.</span> <span class="nav-text">每个对象都提供服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#被隐藏的具体实现"><span class="nav-number">1.4.</span> <span class="nav-text">被隐藏的具体实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复用具体实现"><span class="nav-number">1.5.</span> <span class="nav-text">复用具体实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#继承"><span class="nav-number">1.6.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#“是一个”-与-“像是一个”-关系"><span class="nav-number">1.6.1.</span> <span class="nav-text">“是一个” 与 “像是一个” 关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伴随多态的可互换性"><span class="nav-number">1.7.</span> <span class="nav-text">伴随多态的可互换性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单根继承结构"><span class="nav-number">1.8.</span> <span class="nav-text">单根继承结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器"><span class="nav-number">1.9.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的创建和生命期"><span class="nav-number">1.10.</span> <span class="nav-text">对象的创建和生命期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异常处理-处理错误"><span class="nav-number">1.11.</span> <span class="nav-text">异常处理:处理错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#并发进程"><span class="nav-number">1.12.</span> <span class="nav-text">并发进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java与Internet"><span class="nav-number">1.13.</span> <span class="nav-text">Java与Internet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web是什么"><span class="nav-number">1.13.1.</span> <span class="nav-text">Web是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端编程"><span class="nav-number">1.13.2.</span> <span class="nav-text">客户端编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务端编程"><span class="nav-number">1.13.3.</span> <span class="nav-text">服务端编程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.14.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
             
 
           </div>

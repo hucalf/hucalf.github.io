@@ -171,7 +171,7 @@
 <meta property="og:description" content="目录 if 表达式在Kotlin中，if是一个表达式即它会返回一个值。所有就不需要三元运算符（条件 ? 然后 : 否则）。 123456789101112131415fun main() &amp;#123;    var a = 1    var b = 5    //if语句    if (a &amp;lt; b)        println(a)    //else    if (a &amp;gt; b) &amp;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7047396-dade08ac5eea1578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-04-16T10:33:57.620Z">
+<meta property="og:updated_time" content="2019-04-16T10:56:07.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kotlin初级篇(三):表达式">
 <meta name="twitter:description" content="目录 if 表达式在Kotlin中，if是一个表达式即它会返回一个值。所有就不需要三元运算符（条件 ? 然后 : 否则）。 123456789101112131415fun main() &amp;#123;    var a = 1    var b = 5    //if语句    if (a &amp;lt; b)        println(a)    //else    if (a &amp;gt; b) &amp;">
@@ -557,7 +557,7 @@
                 
               
 
-              <time title="创建时间：2019-04-16 16:43:14 / 修改时间：18:33:57" itemprop="dateCreated datePublished" datetime="2019-04-16T16:43:14+08:00">2019-04-16</time>
+              <time title="创建时间：2019-04-16 16:43:14 / 修改时间：18:56:07" itemprop="dateCreated datePublished" datetime="2019-04-16T16:43:14+08:00">2019-04-16</time>
             
 
             
@@ -674,7 +674,7 @@
 <h2 id="when-表达式"><a href="#when-表达式" class="headerlink" title="when 表达式"></a>when 表达式</h2><p>when表达式，加强版的switch，分支条件可以是任意表达式或类型，用法如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">fun main() &#123;</span><br><span class="line">    //when 语句</span><br><span class="line">    val x = 5</span><br><span class="line">   when (x) &#123;</span><br><span class="line">         is Int,in 1..100 -&gt; println(&quot;Hi $x is in 1..100&quot;) //处理相同的结果，则把多个分支条件放在一起，用逗号分隔</span><br><span class="line">         !in 1..100 -&gt; println(&quot;$x is not in 1..100&quot;)</span><br><span class="line">         else -&gt; println(&quot;查无结果&quot;)</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">    //when表达式</span><br><span class="line">    var a = 1</span><br><span class="line">    var b = 5</span><br><span class="line">    val max = when &#123;</span><br><span class="line">        a &gt; b -&gt; &quot;choose: a = $a&quot;</span><br><span class="line">        else -&gt; &quot;choose: b =$b&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    println(max)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h2><p>for 循环可以对任何提供迭代器（iterator）的对象进行遍历，语法如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">fun main() &#123;</span><br><span class="line"></span><br><span class="line">    //循环输出1-100</span><br><span class="line">    for (i in 1..100) &#123;</span><br><span class="line">        println(i)</span><br><span class="line">    &#125;</span><br><span class="line">    val array = arrayOf(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)</span><br><span class="line">    //遍历一个数组或者一个 list</span><br><span class="line">    for (i in array.indices) &#123;</span><br><span class="line">        println(array[i])</span><br><span class="line">    &#125;</span><br><span class="line">    //库函数 withIndex 的使用</span><br><span class="line">    for ((index, value) in array.withIndex()) &#123;</span><br><span class="line">        println(&quot;$index is $value&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="While-循环"><a href="#While-循环" class="headerlink" title="While 循环"></a>While 循环</h2><p>while与do while的语法如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">fun main() &#123;</span><br><span class="line">    var x = 5</span><br><span class="line">    while (x &gt; 0) &#123;</span><br><span class="line">        println(&quot;x = $x&quot;)</span><br><span class="line">        x--</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    var j =5</span><br><span class="line">    do &#123;</span><br><span class="line">        println(&quot;j = $j&quot;)</span><br><span class="line">        j--</span><br><span class="line"></span><br><span class="line">    &#125; while (j &gt; 0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h2><p>while与do while的语法如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">fun main() &#123;</span><br><span class="line">    var x = 5</span><br><span class="line">    while (x &gt; 0) &#123;</span><br><span class="line">        println(&quot;x = $x&quot;)</span><br><span class="line">        x--</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    var j =5</span><br><span class="line">    do &#123;</span><br><span class="line">        println(&quot;j = $j&quot;)</span><br><span class="line">        j--</span><br><span class="line"></span><br><span class="line">    &#125; while (j &gt; 0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="跳转表达式"><a href="#跳转表达式" class="headerlink" title="跳转表达式"></a>跳转表达式</h2><p>Kotlin有三种结构化跳转表达式:</p>
 <ul>
 <li>return 返回</li>
@@ -822,6 +822,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/04/17/《Thinking-in-Java》学习笔记-第一章—对象导论/" rel="prev" title="《Thinking in Java》学习笔记:第一章—对象导论">
+                《Thinking in Java》学习笔记:第一章—对象导论 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -895,7 +899,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -914,7 +918,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -933,7 +939,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1003,7 +1011,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#if-表达式"><span class="nav-number">1.1.</span> <span class="nav-text">if 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#when-表达式"><span class="nav-number">1.2.</span> <span class="nav-text">when 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-循环"><span class="nav-number">1.3.</span> <span class="nav-text">for 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#While-循环"><span class="nav-number">1.4.</span> <span class="nav-text">While 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跳转表达式"><span class="nav-number">1.5.</span> <span class="nav-text">跳转表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#break与continue"><span class="nav-number">1.5.1.</span> <span class="nav-text">break与continue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#return"><span class="nav-number">1.5.2.</span> <span class="nav-text">return</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">2.</span> <span class="nav-text">小结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#if-表达式"><span class="nav-number">1.1.</span> <span class="nav-text">if 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#when-表达式"><span class="nav-number">1.2.</span> <span class="nav-text">when 表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-循环"><span class="nav-number">1.3.</span> <span class="nav-text">for 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while-循环"><span class="nav-number">1.4.</span> <span class="nav-text">while 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跳转表达式"><span class="nav-number">1.5.</span> <span class="nav-text">跳转表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#break与continue"><span class="nav-number">1.5.1.</span> <span class="nav-text">break与continue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#return"><span class="nav-number">1.5.2.</span> <span class="nav-text">return</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">2.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
@@ -1045,7 +1053,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">8k</span>
   
 
   
@@ -1056,7 +1064,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
   
 </div>
 
